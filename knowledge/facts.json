@@ -17,5 +17,19 @@
       "added": "2026-01-15T12:29:37.577913",
       "by": "Claude"
     }
+  ],
+  "github": [
+    {
+      "fact": "Репозитории: claude-mailbox, agi-news-agent, vm-auto-deployer на github.com/tikserziku",
+      "added": "2026-01-15T13:24:40.785281",
+      "by": "Claude"
+    }
+  ],
+  "автоматизация": [
+    {
+      "fact": "Auto-deployer коммитит изменения каждый час",
+      "added": "2026-01-15T13:24:40.934794",
+      "by": "Claude"
+    }
   ]
 }
