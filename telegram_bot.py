@@ -119,6 +119,11 @@ def build_prompt(user_message):
     return prompt
 
 def get_gemini_key():
+    """Get Gemini key from key manager"""
+    key_file = Path.home() / ".keys" / "visaginas360.key"
+    if key_file.exists():
+        return key_file.read_text().strip()
+    # Fallback to encrypted
     result = subprocess.run(
         ["openssl", "enc", "-aes-256-cbc", "-d", "-pbkdf2",
          "-in", "/home/ubuntu/.secrets/gemini_api.enc",
